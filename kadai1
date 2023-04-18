@@ -24,10 +24,9 @@ def main():
             bg_img2 = pg.transform.flip(bg_img, True, False)
         screen.blit(bg_img, (-x, 0))
         screen.blit(bg_img2, (1600-x,0))
-        # kk_imgs = pg.transform.rotozoom(kk_img, tmr%15, 1.0)4
         screen.blit(kk_imgs[tmr%20], [300, 200])
         pg.display.update()
-        clock.tick(60)
+        clock.tick(80)
 
 
 if __name__ == "__main__":
